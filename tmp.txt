@@ -1,0 +1,5 @@
+
+    "icons": {
+        "128": "img/icon128.png",
+        "48": "img/icon48.png"
+     },
