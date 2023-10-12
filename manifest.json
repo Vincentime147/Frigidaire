@@ -2,6 +2,10 @@
     "action": {
         "default_icon": "img/show.png"
     },
+    "icons": {
+        "128": "img/show.png",
+        "48": "img/show.png"
+     },
 
     "default_locale": "fr",
 
@@ -14,7 +18,7 @@
         "newtab": "the_index.html"
      },
 
-    
-    "version": "1.30.27.31" 
+     "manifest_version": 3,
+    "version": "1"
 
 }
