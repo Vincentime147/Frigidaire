@@ -1,5 +1,6 @@
 {
     "action": {
+        "default_popup":  "popup_index.html",
         "default_icon": "img/show.png"
     },
     "icons": {
