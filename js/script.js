@@ -2,7 +2,9 @@
  */
 
 
-
+/*************************
+ * Function              *
+ *************************/
 
 function changeWallPaper(){
     let a = Math.floor(Math.random() * 9);
@@ -11,36 +13,24 @@ function changeWallPaper(){
     document.body.style.backgroundSize = `auto 115%`;
 
 }
+function theClock(){
+    var date = new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds() ;
+    if (h.toString().length== 1) h = `0${h.toString()}`;
+    if (m.toString().length== 1) m = `0${m.toString()}`;
+    if (s.toString().length== 1) s = `0${s.toString()}`;
+    document.getElementById("clock").innerHTML=`${h}:${m}:${s}`;
+}
+/*************************
+ * Execution              *
+ *************************/
 changeWallPaper();
+theClock();
 setInterval(
     function(){
-        var date = new Date();
-        var h = date.getHours();
-        var m = date.getMinutes();
-        var s = date.getSeconds() ;
-        if (h.toString().length== 1) h = `0${h.toString()}`;
-        if (m.toString().length== 1) m = `0${m.toString()}`;
-        if (s.toString().length== 1) s = `0${s.toString()}`;
-        /**
-         *document.getElementById("clock").innerHTML=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
-         */
-        document.getElementById("clock").innerHTML=`${h}:${m}:${s}`;
-    },10
+        theClock()
+    },1000
 );
-
-/*
-const wallPaperList = 
- document.write("avant")
-import wallPaperList from "listImg.js" ; 
-
-
-document.write(a);
-
-const fs = require('fs');
-document.write("tesssssssssssst");
-
-var files = fs.readdirSync('img/');
-document.write(files);
-
-*/
 
